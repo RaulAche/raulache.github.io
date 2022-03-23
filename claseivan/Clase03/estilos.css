@@ -1,0 +1,121 @@
+*{
+    margin: 0%;
+    padding: 0%;}
+
+body {
+   background-color: white; 
+   font-family: 'Oswald', sans-serif;
+}
+
+#letras:hover {
+    cursor:pointer;
+    color: aqua;
+    transition: .5s;
+}
+ 
+header {
+    width: 1366px;
+    height: 62px;
+    background-color: #FF7BAC;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 12px;
+    align-items: center;
+    margin: auto;
+    color: white;
+    border-radius: 10px;
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#sitename {
+    grid-column: 1/4;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Supermercado One', cursive;
+    font-size: 35px;
+}
+
+header nav {
+    font-family: 'Oswald', sans-serif;
+    grid-column: 8/13;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    justify-content: space-around;
+}
+
+#mainlayout {
+    width: 1366px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 12px;
+    margin: auto;
+    margin-top: 62px;
+}
+
+#mainlayout *{ 
+    background-color: turquoise;
+}
+
+#portada {
+    grid-column: 1 / -1;
+    height: 596px;
+}
+
+#fotoprincipal,#cartel {
+    height: 500px;
+} 
+
+#fotoprincipal {
+    grid-column: 1/10;
+}
+
+#cartel {
+    grid-column: 10/13;
+    
+}
+#cartel svg{
+    height: 100%;
+    width: 100%;
+}
+
+#circulito:hover{
+    cursor: pointer;
+    opacity: .85;
+}
+.foto {
+    grid-column: auto / span calc(13/3) ;
+    height: 264px;
+}
+
+    .foto img{
+        
+        height: 100%;
+        width: 100%;
+        opacity: .4;
+    }
+
+    .foto img:hover {
+        cursor:pointer;
+        opacity: 1;
+        transition: 1s;
+    }
+
+
+
+#ads {
+    height: 150px;
+    grid-column: 1/-1;
+}
+
+footer {
+    height: 100px;
+    grid-column: 1/-1;
+    border-radius: 10px;
+    background-color: #FF7BAC !important;
+
+}
+

@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <style>
+            #main {
+                background-color: rgb(148, 202, 255);
+                transition: background-color 3s;
+            }
+           p{
+               color: rgb(255, 36, 36);
+               font-size: 40px;
+               font-family: Arial, Helvetica, sans-serif;
+           } 
+           div{
+               color:rgba(0, 255, 0, 0.514);
+               font-size: 50px;
+               transform: translateY(-200);
+           }
+           #principal {
+            color: saddlebrown;
+            font-family: cursive;
+            font-size: 70px;
+           }
+           #principal:hover {
+            color: rgb(220, 255, 22);
+               cursor:pointer; 
+           }
+           .dos:hover {
+               color: royalblue;
+               cursor:pointer;
+           }
+           .tres:hover {
+               color: royalblue;
+               cursor:pointer;
+           }
+        </style>
+        
+    </head>
+<body id="main" > 
+<p id="principal" onclick="paginacentro()">Esto es un parrafo.</p> 
+<p class="dos" onclick="fotogrande()"> Haz grande la foto.</p>
+<p class="tres" onclick="cambiarfonfo()"> Cambia el color del fondo.</p>
+<p class="cuatro"> Esto es un cuarto parrafo.</p>
+<p class="cinco"> Esto es un quinto parrafo.</p>
+<p class="seis"> Esto es un sexto parrafo.</p>
+<img id="perro" src="./imagenes/foto.jpg" width="500" >
+<div>va debajo</div>
+<script>
+    document.getElementById("dos")
+
+    function paginacentro(){
+        window.open("https://www3.centro.edu.mx/")
+    }
+
+    function fotogrande(){
+        document.getElementById("perro").setAttribute("width","800");
+    }
+
+    function cambiarfonfo(){
+        document.getElementById("main").style.backgroundColor = "#ff0000";
+    }
+    function abrePagina(urlpagina) {
+        window.open (urlpagina)
+    }
+
+</script>
+</body>    
+</html>

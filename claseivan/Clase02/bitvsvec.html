@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+            #Estrella:hover {
+                fill: aqua;
+                transition: fill 1s;
+            }
+
+            #Circulo:hover {
+                fill: brown;
+                transition: fill 1s;
+            }
+        </style>
+
+    </head>
+    <body>
+        <!--Mapas de Bits-->
+
+        <!--<img src="(link imagen)"-->
+
+        <canvas id="graficagenerativa" width="200" height="200" style= "border: 4px solid #000000"> </canvas>
+
+        <!--Gráfica Vectorial-->
+
+        <svg width="200" height="200" style= "border: 4px solid #000000"> 
+            <circle id="Circulo" cx="100" cy="100" r="50" onclick="alert(1111);" style="cursor:pointer"> </circle> 
+        </svg>
+
+        <svg width="200" height="200" style= "border: 4px solid #000000" x="0px" y="0px"
+            viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+                <style type="text/css">
+                    .st0{fill:#FFFFFF;}
+                </style>
+                <g id="Estrella" style="cursor:pointer">
+                    <polygon points="43.42,58.94 27.93,58.91 37.38,46.63 32.62,31.89 47.21,37.09 59.76,28.01 59.34,43.49 71.85,52.62 56.99,57 
+                        52.17,71.72 	"/>
+                    <path class="st0" d="M58.57,30.28l-0.35,12.59l-0.03,1.19l0.96,0.7l10.17,7.42l-12.08,3.56l-1.14,0.34l-0.37,1.13l-3.92,11.97
+                        l-7.12-10.39l-0.67-0.98l-1.19,0l-12.59-0.03l7.68-9.98l0.73-0.95l-0.37-1.14l-3.87-11.98l11.86,4.22l1.12,0.4l0.97-0.7
+                        L58.57,30.28 M60.96,25.74L47.03,35.82l-16.2-5.76l5.28,16.36L25.63,60.04l17.19,0.04l9.72,14.18l5.35-16.34l16.49-4.86
+                        L60.49,42.93L60.96,25.74L60.96,25.74z"/>
+                </g>
+        </svg>
+
+        <script>
+
+            var idcanvas = document.getElementById("graficagenerativa");
+            var pixeles = idcanvas.getContext("2d");
+            pixeles.beginPath();
+            pixeles.arc(100, 100, 70, 0, Math.PI*2);
+            pixeles.fillStyle ="#000000";
+            pixeles.fill();
+
+        </script>
+    </body>
+</html>
